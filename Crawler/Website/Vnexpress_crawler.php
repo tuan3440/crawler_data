@@ -1,6 +1,6 @@
 <?php
 
-    class vnexpress {
+    class Vnexpress {
          public $curl;
 
          function __construct(Curl_data $curl) {

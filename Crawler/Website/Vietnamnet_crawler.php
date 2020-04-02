@@ -1,6 +1,6 @@
 <?php
 
-    class vietnamnet {
+    class Vietnamnet {
          public $curl;
 
          function __construct(Curl_data $curl) {

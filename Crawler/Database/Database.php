@@ -1,5 +1,5 @@
 <?php
-     class database {
+     class Database {
 
          private $table;
          private $object;
@@ -37,8 +37,9 @@
          $date = $this->object->get_date($html);
     
          $this->insert_db($title, $content, $suburl, $date);
-         echo "lưu dữ liệu thành công";
+         
     }
+    echo "lưu dữ liệu thành công";
 
 }
 }

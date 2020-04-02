@@ -11,17 +11,21 @@
    require_once '../Curl/Decoder.php';
    require_once '../Curl/Encoder.php';
    require_once '../Curl/StringUtil.php';
-   require_once 'database.php';
-   require_once 'vietnamnet_crawler.php';
-   require_once 'Curl_data.php';
+   require_once 'Database/Database.php';
    
+   require_once 'Curl_data/Curl_data.php';
+   require_once 'Website/Vnexpress_crawler.php';
+   require_once 'Website/Dantri_crawler.php';
+   require_once 'Website/Vietnamnet_crawler.php';
+   
+
    if(isset($_GET['url'])){
       $url = $_GET['url'];
       $table = 'vietnamnet';
      
       $curl= new Curl_data($url);
-      $vietnamnet = new vietnamnet($curl);
-      $database = new database($table, $vietnamnet);
+      $vietnamnet = new Vietnamnet($curl);
+      $database = new Database($table, $vietnamnet);
       $database->insert();
    }
       

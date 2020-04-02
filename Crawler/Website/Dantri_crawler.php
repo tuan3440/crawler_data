@@ -1,6 +1,6 @@
 <?php
 
-    class dantri {
+    class Dantri {
          public $curl;
 
          function __construct(Curl_data $curl) {
