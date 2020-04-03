@@ -2,6 +2,7 @@
 <?php
 
 class Database_dantri extends Database {
+  
     protected $table = 'dantri';
     protected $object;
     function __construct(Dantri $object) {
